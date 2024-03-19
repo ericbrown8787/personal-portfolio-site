@@ -8,6 +8,19 @@
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 400;
+}
+
 nav ul {
   list-style: none;
 }
@@ -19,6 +32,10 @@ nav ul li a {
 /* Full page */
 body {
   background-color: #f0fdfa;
+}
+
+main {
+  padding: 1rem;
 }
 
 /* Page Header */
@@ -109,4 +126,20 @@ body {
 .footer-nav {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu-input {
+    display: none;
+  }
+  .site-nav {
+    position: unset;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .site-nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
